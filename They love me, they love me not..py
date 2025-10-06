@@ -28,7 +28,7 @@ def main_menu():
                 if next_move == "Yes" or next_move == "yes":
                     main_menu()
     elif choice == "Take me to where they promised.":
-        secretwed()
+        wedsecret()
     elif choice == "C" or choice == "c":
         creds()
         time.sleep(2)
@@ -606,7 +606,7 @@ def yansecret():
         print("===========================")
 
 
-def secretwed():
+def wedsecret():
     print("wedscene KWBDFBWDFBEWJFDFBDSUBDS")
     time.sleep(5)
     main_menu()

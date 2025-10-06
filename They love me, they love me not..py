@@ -113,7 +113,7 @@ def scenario5():
 
 def scenario6():
     global lovemeter
-    print("#scenario\n#choiceA\n#choiceB\n#choiceC")
+    print("You arrived at school earlier than usual and haven’t seen them in their classroom yet; their seat is still left empty.\nA. Steal one of their pens that’s on their table and keep it.\nB. Don’t do anything and just leave.\nc. Leave a small note underneath their desk and quietly leave.")
     time.sleep(1)
     choice = str(input("What do you do? "))
 
@@ -127,7 +127,7 @@ def scenario6():
 
 def scenario7():
     global lovemeter
-    print("#scenario\n#choiceA\n#choiceB\n#choiceC")
+    print("While walking with one of your friends, they suddenly nudge you, raising their eyebrows while pointing at your crush. At the sight of them, your heart skips a beat. Suddenly, your friend pushes you towards them.\nA. Use your quick reaction time and dodge quickly, avoiding falling onto them.\nB. Let yourself fall on them, but afterwards apologize profusely.\nC. Pull your friend down as well and end up falling on your crush while being crushed by your friend.")
     time.sleep(1)
     choice = str(input("What do you do? "))
 
@@ -141,7 +141,7 @@ def scenario7():
 
 def scenario8():
     global lovemeter
-    print("#scenario\n#choiceA\n#choiceB\n#choiceC")
+    print("You’re standing in line to buy food from the canteen, and you realize they're behind you, waiting to buy food as well.\nA. Start a conversation with them.\nB. You begin to sweat profusely and quickly exit the line to spare your racing heart.\nC. You get so nervous that you forget that the line was moving so you end up standing there awkwardly before quickly moving with embarrassment.")
     time.sleep(1)
     choice = str(input("What do you do? "))
 
@@ -155,7 +155,7 @@ def scenario8():
 
 def scenario9():
     global lovemeter
-    print("#scenario\n#choiceA\n#choiceB\n#choiceC")
+    print("You’re finally back home when you decide to message them, saying to stay safe while going home. After you sent it, you patiently waited for their response, but you were still left on delivered despite them being online\nA. Send another follow-up message, but don’t overthink it.\nB. Delete your message and follow up with “Never mind”.\nC. Leave the message alone and assume they’re busy.")
     time.sleep(1)
     choice = str(input("What do you do? "))
 
@@ -169,7 +169,7 @@ def scenario9():
 
 def scenario10():
     global lovemeter
-    print("#scenario\n#choiceA\n#choiceB\n#choiceC")
+    print("After a few hours, they decide to reply to your message, and they ask you how you were doing and how your night was so far.\nA. You keep the conversation flowing however you fumble so bad you end up misspelling most of your messages.\nB.You keep the conversation going late into the night before saying good night to each other.\nC. Leave them on read because you’re too nervous to reply and because you’re overthinking it too much.")
     time.sleep(1)
     choice = str(input("What do you do? "))
 

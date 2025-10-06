@@ -40,8 +40,7 @@ def main_menu():
 
 def scenario1():
     global lovemeter
-    print(
-        "As you pass by their classroom on the way to your own, your eyes wandered to their figure, sitting down on their seat as usual. They notice you, and you lock eyes...\nA. Wave enthusiastically and give them a soft smile. \nB. Stare at them for a full 5 seconds and wave awkwardly.\nC. Turn away immediately and walk off.")
+    print("As you pass by their classroom on the way to your own, your eyes wandered to their figure, sitting down on their seat as usual. They notice you, and you lock eyes...\nA. Wave enthusiastically and give them a soft smile. \nB. Stare at them for a full 5 seconds and wave awkwardly.\nC. Turn away immediately and walk off.")
     time.sleep(1)
     choice = str(input("What do you do? "))
 
@@ -55,8 +54,7 @@ def scenario1():
 
 def scenario2():
     global lovemeter
-    print(
-        "\nIt's finally break, and you decide not to leave your classroom. You pull out your phone and your eyes catches the green dot on their profile. They're active! Your heart skips a beat. \nA. Archive them so your heart can rest.\nB. Send them a like emoji without further explanation.\nC. Greet them with a simple 'good morning'.")
+    print("\nIt's finally break, and you decide not to leave your classroom. You pull out your phone and your eyes catches the green dot on their profile. They're active! Your heart skips a beat. \nA. Archive them so your heart can rest.\nB. Send them a like emoji without further explanation.\nC. Greet them with a simple 'good morning'.")
     time.sleep(1)
     choice = str(input("What do you do? "))
 
@@ -70,8 +68,7 @@ def scenario2():
 
 def scenario3():
     global lovemeter
-    print(
-        "Lunch has finally arrived and you go down to the canteen, wanting to buy your food. You spot them---surprisingly---alone at a table and without food.\nA. You walk up to them, and ask them 'Do you want to eat lunch together?'\nB. You awkwardly walk up to them, but your brain freezes and you end up not saying ANYTHING and walk off, regretting your life decisions.\nC. You quietly leave their favorite food on their table.")
+    print("Lunch has finally arrived and you go down to the canteen, wanting to buy your food. You spot them---surprisingly---alone at a table and without food.\nA. You walk up to them, and ask them 'Do you want to eat lunch together?'\nB. You awkwardly walk up to them, but your brain freezes and you end up not saying ANYTHING and walk off, regretting your life decisions.\nC. You quietly leave their favorite food on their table.")
     time.sleep(1)
     choice = str(input("What do you do? "))
 
@@ -87,8 +84,7 @@ def scenario4():
     global lovemeter
     global charname
     global username
-    print(
-        f"It's finally dismissal and you get to go home! But before you could exit through the gate, a tap on your shoulder. It was {charname}! \"Hey, {username}, wanna maybe... walk together? I've been a bit lonely lately.\"\nA. You nod awkwardly, a sheepish smile on your face.\nB. You accept without hesitation, a bright smile on your face as you walk alongside them.\nC. Stare at them for a full minute before accepting.")
+    print(f"It's finally dismissal and you get to go home! But before you could exit through the gate, a tap on your shoulder. It was {charname}! \"Hey, {username}, wanna maybe... walk together? I've been a bit lonely lately.\"\nA. You nod awkwardly, a sheepish smile on your face.\nB. You accept without hesitation, a bright smile on your face as you walk alongside them.\nC. Stare at them for a full minute before accepting.")
     time.sleep(1)
     choice = str(input("What do you do? "))
 
@@ -103,8 +99,7 @@ def scenario4():
 def scenario5():
     global lovemeter
     global charname
-    print(
-        f"Walking beside {charname}, you can't help the fast beating of your heart against your chest. But... the silence was getting a bit awkward.\nA. You decide to begin a conversation, but while they speak, you act rather indifferent.\nB. You begin a conversation, asking about their day and telling jokes, ultimately painting a bright smile on their face.\nC. You begin a conversation, though while telling a joke, you stumble over your words and elicit a soft laugh from {charname}.")
+    print(f"Walking beside {charname}, you can't help the fast beating of your heart against your chest. But... the silence was getting a bit awkward.\nA. You decide to begin a conversation, but while they speak, you act rather indifferent.\nB. You begin a conversation, asking about their day and telling jokes, ultimately painting a bright smile on their face.\nC. You begin a conversation, though while telling a joke, you stumble over your words and elicit a soft laugh from {charname}.")
     time.sleep(1)
     choice = str(input("What do you do? "))
 
@@ -615,40 +610,33 @@ def wedsecret():
 def locker():
     choice = input("Go through their locker?\nYes\tor\tNo\n")
     if choice == "yes" or choice == "Yes":
-        print("You found: Phone!")
-        print("You found their phone. Weirdly enough, you knew their password.")
+        input("You found: Phone!")
+        input("You found their phone. Weirdly enough, you knew their password.")
         second_choice = input("Go through it?\nYes\tor\tNo\n")
         if second_choice == "yes" or second_choice == "Yes":
-            print(
-                "You look through a couple selfies, their recent searches, then you entered a notes app.\nWait-- Creator's note??? You open it and see:\n\n===========================\nCreator's note\n\nTell EVEREST to take you to where they promised.\n(hint: EVEREST is the one who asks you what you want to do next.\n===========================")
-            print("Um...")
-            time.sleep(1)
-            print(
-                "\"Strange,\" you thought. You then heard the bell. \"I should go now...\"\nShutting the locker, you made your way to class.\n")
-            time.sleep(2)
+            input("You look through a couple selfies, their recent searches, then you entered a notes app.\nWait-- Creator's note??? You open it and see:\n\n===========================\nCreator's note\n\nTell EVEREST to take you to where they promised.\n(hint: EVEREST is the one who asks you what you want to do next.\n===========================")
+            input("Um...")
+            input("\"Strange,\" you thought. You then heard the bell. \"I should go now...\"\nShutting the locker, you made your way to class.\n")
         else:
-            print(
-                "\"I've already gone through their locker... their phone is a bit of a stretch,\" you told yourself. You put their phone back down and shut the locker.\n")
-            time.sleep(2)
+            input("\"I've already gone through their locker... their phone is a bit of a stretch,\" you told yourself. You put their phone back down and shut the locker.\n"
     else:
-        print("\"This is an invasion of their privacy,\" you thought to yourself. You decide to leave.\n")
-        time.sleep(2)
+        input("\"This is an invasion of their privacy,\" you thought to yourself. You decide to leave.\n")
     main_menu()
 
 
 def creds():
     print("===========================")
-    print(
-        "They love me... They love me not.\nMade by --- The deluludevs\nDeveloper --- Zeryl Gonadan, Krisha Villa, Lordwyn Demoni\nMain coder --- Zeryl Gonadan\nSecondary coder --- Lordwyn Demoni, Krisha Villa\nStorywriter --- Lordwyn Demoni, Zeryl Gonadan, Krisha Villa\n'SHOUTOUT TO MY (Zeryl) ONE AND ONLY INSPIRATION!!!!!'")
+    print("They love me... They love me not.\nMade by --- The deluludevs\nDeveloper --- Zeryl Gonadan, Krisha Villa, Lordwyn Demoni\nMain coder --- Zeryl Gonadan\nSecondary coder --- Lordwyn Demoni, Krisha Villa\nStorywriter --- Lordwyn Demoni, Zeryl Gonadan, Krisha Villa\n'SHOUTOUT TO MY (Zeryl) ONE AND ONLY INSPIRATION!!!!!'")
     print("===========================")
     time.sleep(2)
-
 
 def main():
     global charname
     global username
     time.sleep(1)
     username = input("What shall we call you? ")
+    if username == "Kaye" or username == "kaye":
+        print("Welcome to ")
     charname = input("What shall 'their' name be? ")
     if charname == "Zeryl" or charname == "zeryl":
         print("Unless ur a certain camia, she wants nothing to do with u /lh")
@@ -656,15 +644,12 @@ def main():
         print("Unless ur a fictional character, u better GET OUUUUU--")
     elif charname == "Lordwyn" or charname == "lordwyn":
         print("You must be one shady guy...")
-    input(
-        "MINOR WARNING!!!\nThis character has their own fixed persona---If you attempt this with your special someone, it's not guaranteed they'll like you back (ehe)")
+    input("MINOR WARNING!!!\nThis character has their own fixed persona---If you attempt this with your special someone, it's not guaranteed they'll like you back (ehe)")
 
-    print(
-        f"\nAugust 21, 20xx. One more week until you finally confess.\n\nIt's been a whole year ever since you first laid your eyes on them...\nYou had enough of watching from afar.. This week.. It's going to be different..!\nYou...\nWill make the first move...")
-    time.sleep(4)
-
+    input(f"\nAugust 21, 20xx. One more week until you finally confess.\n\nIt's been a whole year ever since you first laid your eyes on them...\nYou had enough of watching from afar.. This week.. It's going to be different..!\nYou...\nWill make the first move...")
+    
     print("===========================")
-    print("☆｡⁠⁠✧.* ~ Day 1 ~ *⁠.⁠✧｡⁠☆ ")
+    input("☆｡⁠⁠✧.* ~ Day 1 ~ *⁠.⁠✧｡⁠☆ ")
     time.sleep(1)
     scenario1()
     time.sleep(1)
@@ -680,7 +665,7 @@ def main():
     print("===========================")
 
     print("===========================")
-    print("☆｡⁠⁠✧.* ~ Day 2 ~ *⁠.⁠✧｡⁠☆ ")
+    input("☆｡⁠⁠✧.* ~ Day 2 ~ *⁠.⁠✧｡⁠☆ ")
     time.sleep(1)
     scenario6()
     time.sleep(1)
@@ -696,7 +681,7 @@ def main():
     print("===========================")
 
     print("===========================")
-    print("☆｡⁠⁠✧.* ~ Day 3 ~ *⁠.⁠✧｡⁠☆ ")
+    input("☆｡⁠⁠✧.* ~ Day 3 ~ *⁠.⁠✧｡⁠☆ ")
     time.sleep(1)
     scenario11()
     time.sleep(1)
@@ -712,7 +697,7 @@ def main():
     print("===========================")
 
     print("===========================")
-    print("☆｡⁠⁠✧.* ~Day 4 ~ *⁠.⁠✧｡⁠☆ ")
+    input("☆｡⁠⁠✧.* ~Day 4 ~ *⁠.⁠✧｡⁠☆ ")
     time.sleep(1)
     scenario16()
     time.sleep(1)
@@ -728,7 +713,7 @@ def main():
     print("===========================")
 
     print("===========================")
-    print("☆｡⁠⁠✧.* ~ Day 5 ~ *⁠.⁠✧｡⁠☆")
+    input("☆｡⁠⁠✧.* ~ Day 5 ~ *⁠.⁠✧｡⁠☆")
     time.sleep(1)
     scenario21()
     time.sleep(1)
@@ -744,7 +729,7 @@ def main():
     print("===========================")
 
     print("===========================")
-    print("☆｡⁠⁠✧.* ~ Day 6 ~ *⁠.⁠✧｡⁠☆")
+    input("☆｡⁠⁠✧.* ~ Day 6 ~ *⁠.⁠✧｡⁠☆")
     time.sleep(1)
     scenario26()
     time.sleep(1)
@@ -761,7 +746,7 @@ def main():
     print("===========================")
 
     print("===========================")
-    print("☆｡⁠⁠✧.* ~ Day 7 ~ *⁠.⁠✧｡⁠☆")
+    input("☆｡⁠⁠✧.* ~ Day 7 ~ *⁠.⁠✧｡⁠☆")
     time.sleep(1)
     scenario31()
     time.sleep(1)
@@ -777,7 +762,7 @@ def main():
     print("===========================")
 
     print("===========================")
-    print("Day of confession.")
+    input("Day of confession.")
     time.sleep(1)
     final()
     time.sleep(4)

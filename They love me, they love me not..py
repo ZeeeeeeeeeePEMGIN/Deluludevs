@@ -104,8 +104,10 @@ def scenario5():
     choice = str(input("What do you do? "))
 
     if choice == "A" or choice == "a":
+        print("They notice your ignorance, and soon stops speaking. The whole walk home turned dead silent, as you regretted acting indifferent earlier and giving dry and quick responses.\nOnce reaching your destination, they give a half-hearted goodbye as you watch them walk away. Your heart feels rather... heavy?")
         lovemeter = lovemeter - 3
     elif choice == "B" or choice == "b":
+        print("The whole walk home, both of you enjoyed each other's presence, cackling about silly jokes and talking as if your normal friends, and you felt as if your face was red the entire time.\nYou finally reached your destination, as you see them with a disappointed expression.\nYou give them a final wave, as they struck you with another sincere smile, waving back.\nYou think you both enjoyed that interaction.")
         lovemeter = lovemeter + 6
     else:
         lovemeter = lovemeter + 4
@@ -113,15 +115,18 @@ def scenario5():
 
 def scenario6():
     global lovemeter
-    print("You arrived at school earlier than usual and haven’t seen them in their classroom yet; their seat is still left empty.\nA. Steal one of their pens that’s on their table and keep it.\nB. Don’t do anything and just leave.\nc. Leave a small note underneath their desk and quietly leave.")
+    print("You arrived at school earlier than usual and haven’t seen them in their classroom yet; their seat still left empty.\nA. Steal one of their pens that’s on their table and keep it.\nB. Don’t do anything and just leave.\nc. Leave a small note underneath their desk and quietly leave.")
     time.sleep(1)
     choice = str(input("What do you do? "))
 
     if choice == "A" or choice == "a":
+        print("You selfishly grab one of their pens without thought, and keep it for yourself; yet you feel bad for stealing it.")
         lovemeter = lovemeter - 1
     elif choice == "B" or choice == "b":
+        print("With nothing to do, you leave their desk be, and dip.")
         lovemeter = lovemeter + 2
     else:
+        print("You quietly sneak a small note underneath their desk, and get butterflies from the thought of them finding and reading it. You leave in hopes they'd see it.")
         lovemeter = lovemeter + 4
 
 
@@ -132,10 +137,13 @@ def scenario7():
     choice = str(input("What do you do? "))
 
     if choice == "A" or choice == "a":
+        print("Your crush and yourself were thankfully left unscathed, as you quickly get up and scold your friend, laughing maniacally. You hear them trying to hold back their laugh, as your face flushes from embarrassment. You drag your friend away and finally leave.")
         lovemeter = lovemeter + 2
     elif choice == "B" or choice == "b":
+        print("They tell you it's okay and to stop apologizing, for some reason with a bright smile plastered on your face.\nYou nod awkwardly, as you drag your friend away to crash out to them.")
         lovemeter = lovemeter + 4
     else:
+        print("All of you yelled from pain at the same time as your crush and yourself got crushed. Once you got up, you apologized, and you ran from the embarrassment of crushing your crush.")
         lovemeter = lovemeter - 1
 
 
@@ -146,22 +154,26 @@ def scenario8():
     choice = str(input("What do you do? "))
 
     if choice == "A" or choice == "a":
+        print("The conversation ends up going well, talking about the usual things friends talk about, as you both was able to soon buy your food without trouble.")
         lovemeter = lovemeter + 4
     elif choice == "B" or choice == "b":
+        print("Once you're out of there, you couldn't help but overthink the fact that they may have felt you were ignoring them, since you DID sprint out of there once realizing their presence. ")
         lovemeter = lovemeter - 1
     else:
+        print("You hear their soft chuckle behind you, as your face flushes once more. After buying your food, you bolt straight out.")
         lovemeter = lovemeter + 2
 
 
 def scenario9():
     global lovemeter
-    print("You’re finally back home when you decide to message them, saying to stay safe while going home. After you sent it, you patiently waited for their response, but you were still left on delivered despite them being online\nA. Send another follow-up message, but don’t overthink it.\nB. Delete your message and follow up with “Never mind”.\nC. Leave the message alone and assume they’re busy.")
+    print("You’re finally back home when you decide to message them, telling them to stay safe while going home. After you sent it, you patiently waited for their response, but you were still left on delivered despite them being online\nA. Send another follow-up message, but don’t overthink it.\nB. Delete your message and follow up with a “Never mind”.\nC. Leave the message alone and assume they’re busy.")
     time.sleep(1)
     choice = str(input("What do you do? "))
 
     if choice == "A" or choice == "a":
         lovemeter = lovemeter + 4
     elif choice == "B" or choice == "b":
+        print("They asked what you unsent, and you only responded by saying it was nothing. You regret all your life choices.") #can we make this so that if they pick this, they wont be able to do situation 10??????? 
         lovemeter = lovemeter - 1
     else:
         lovemeter = lovemeter + 2
@@ -169,15 +181,18 @@ def scenario9():
 
 def scenario10():
     global lovemeter
-    print("After a few hours, they decide to reply to your message, and they ask you how you were doing and how your night was so far.\nA. You keep the conversation flowing however you fumble so bad you end up misspelling most of your messages.\nB.You keep the conversation going late into the night before saying good night to each other.\nC. Leave them on read because you’re too nervous to reply and because you’re overthinking it too much.")
+    print("After a few hours, they decide to reply to your message, and they ask you how you were doing and how your night was so far.\nA. You keep the conversation flowing however you fumble so bad you end up misspelling most of your messages.\nB.Reply but you think first before sending the message, carefully considering how it would affect this conversation.\nC. Leave them on read because you’re too nervous to reply and because you’re overthinking it too much.")
     time.sleep(1)
     choice = str(input("What do you do? "))
 
     if choice == "A" or choice == "a":
+        print("Despite your constant misspelling of words, you think they didn't mind at all, and you even had fun talking to them, as night falls, and you eventually tell each other good night.")
         lovemeter = lovemeter + 4
     elif choice == "B" or choice == "b":
+        print("You ended up texting all night long, as you found out more information about them. You felt warm in the inside knowing you got to spend so much time with them via messaging.") #user gains hint about crush's fav flowers and things to help in confessing and giving gift?
         lovemeter = lovemeter + 6
     else:
+        print("Although you felt bad for leaving them on read, you decided to give your heart a break, and slept it off.")
         lovemeter = lovemeter - 3
 
 

@@ -45,10 +45,13 @@ def scenario1():
     choice = str(input("What do you do? "))
 
     if choice == "A" or choice == "a":
+        print("They wave and smile at you back. Both of you enjoyed that interaction.")
         lovemeter = lovemeter + 4
     elif choice == "B" or choice == "b":
+        print("They chuckle a bit, and wave back at you.")
         lovemeter = lovemeter + 2
     else:
+        print("They seemed confused and felt a bit hurt from your ignorance.")
         lovemeter = lovemeter - 1
 
 
@@ -59,10 +62,13 @@ def scenario2():
     choice = str(input("What do you do? "))
 
     if choice == "A" or choice == "a":
+        print("Your heart seemed to calm down a bit, yet you felt a bit bad for archiving them.")
         lovemeter = lovemeter - 1
     elif choice == "B" or choice == "b":
+        print("You didn't know what else to react, so you simply tap on the quick reaction. \nThey later responded with a like emoji as well, and you think it went relatively well?")
         lovemeter = lovemeter + 2
     else:
+        print("They greet you back and end up texting more before break ends. You think your conversation went well.")
         lovemeter = lovemeter + 4
 
 
@@ -73,10 +79,13 @@ def scenario3():
     choice = str(input("What do you do? "))
 
     if choice == "A" or choice == "a":
+        print("They smile softly at you, and agrees. You end up spending the whole lunch period together.")
         lovemeter = lovemeter + 4
     elif choice == "B" or choice == "b":
+        print("They stared at you during that whole sequence of events, and seemed a bit uncomfortable. You feel like you should kill yourself already. ")
         lovemeter = lovemeter - 1
     else:
+        print("They stare at you once they realize you felt their favorite food at their table, and you saw as their face lit up. A well 65 pesos spent. ")
         lovemeter = lovemeter + 2
 
 
@@ -84,15 +93,18 @@ def scenario4():
     global lovemeter
     global charname
     global username
-    print(f"It's finally dismissal and you get to go home! But before you could exit through the gate, a tap on your shoulder. It was {charname}! \"Hey, {username}, wanna maybe... walk together? I've been a bit lonely lately.\"\nA. You nod awkwardly, a sheepish smile on your face.\nB. You accept without hesitation, a bright smile on your face as you walk alongside them.\nC. Stare at them for a full minute before accepting.")
+    print(
+        f"It's finally dismissal and you get to go home! But before you could exit through the gate, a tap on your shoulder. It was {charname.upper}! \"Hey, {username.upper}, wanna maybe... walk together? I've been a bit lonely lately.\"\nA. You nod awkwardly, a sheepish smile on your face.\nB. You accept without hesitation, a bright smile on your face as you realize you get to walk home with them.\nC. Stare at them for a full minute before accepting.")
     time.sleep(1)
     choice = str(input("What do you do? "))
 
     if choice == "A" or choice == "a":
-        lovemeter = lovemeter + 2
+        print("They smile back at you, and both of you prepare to walk home.")
     elif choice == "B" or choice == "b":
+        print("They notice your sudden enthusiasm and chuckle a bit. \n'Let's go then.' They tell you, as your face flush from hearing their voice.")
         lovemeter = lovemeter + 4
     else:
+        print("During the whole time you were staring them, they seemed a bit uncomfortable and kept avoiding your gaze. When you finally agreed, they nodded back awkwardly and mutter, 'Let's.. go then...'.")
         lovemeter = lovemeter - 1
 
 

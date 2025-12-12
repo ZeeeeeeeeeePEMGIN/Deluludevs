@@ -2,13 +2,13 @@ import time
 
 lovemeter = 0
 code = "0828"
-
+badges_collected = {"end1" : "?", "end2" : "?", "end3" : "?", "end4" : "?", "end5" : "?", "end6" : "?", "end7" : "?"}
 
 def main_menu():
     print("They love me... They love me not.")
     time.sleep(1)
     print("===========================")
-    print("A. Start\nB. Locker\nC. Credits and honorable mentions")
+    print("A. Start\nB. Locker\nC. Badegs\nD. Credits and honorable mentions")
     print("===========================")
     time.sleep(1)
     choice = str(input("Where shall I take you? "))
@@ -30,6 +30,8 @@ def main_menu():
     elif choice == "Take me to where they promised.":
         wedsecret()
     elif choice == "C" or choice == "c":
+        badges()
+    elif choice == "D" or choice == "d":
         creds()
         time.sleep(2)
         main_menu()
@@ -574,6 +576,7 @@ def final():
     if lovemeter < 5:
         print("harsh rejection")
         end1 = "Heartbroken"
+        badges_collected["end1"] = "Heartbroken"
         time.sleep(4)
         print(f"{end1} end.")
         print("===========================")
@@ -581,13 +584,15 @@ def final():
     elif lovemeter <= 25:
         print("blunt rejection")
         end2 = "At least I tried"
+        badges_collected["end2"] = "At least I tried"
         time.sleep(4)
         print(f"{end2} end.")
         print("===========================")
 
     elif lovemeter <= 50:
         print("polite rejection")
-        end3 = "Friends"
+        end3 = "Just friends"
+        badges_collected["end3"] = "Just friends"
         time.sleep(4)
         print(f"{end3} end.")
         print("===========================")
@@ -595,6 +600,7 @@ def final():
     elif lovemeter <= 75:
         print("promise of a future")
         end4 = "Hopeful"
+        badges_collected["end4"] = "Hopeful"
         time.sleep(4)
         print(f"{end4} end.")
         print("===========================")
@@ -602,6 +608,7 @@ def final():
     elif lovemeter <= 100:
         print("reciprocation")
         end5 = "Happy"
+        badges_collected["end5"] = "Happy"
         time.sleep(4)
         print(f"{end5} end.")
         print("===========================")
@@ -617,6 +624,7 @@ def yansecret():
     if choice == "A" or choice == "a":
         print("Obsession scene")
         end6 = "Happy...?"
+        badges_collected["end6"] = "Happy...?"
         time.sleep(4)
         print(f"{end6} end.")
         print("===========================")
@@ -624,6 +632,7 @@ def yansecret():
     else:
         print("breakup scene")
         end7 = "Won't work out anymore"
+        badges_collected["end7"] = "Won't work out anymore"
         time.sleep(4)
         print(f"{end7} end.")
         print("===========================")
@@ -651,6 +660,10 @@ def locker():
         input("\"This is an invasion of their privacy,\" you thought to yourself. You decide to leave.\n")
     main_menu()
 
+def badges(badges_collected):
+    print("Ending 1: ", badges_collected["end1"], "\nEnding 2: ", badges_collected["end2"], "\nEnding 3: ", badges_collected["end3"], "\nEnding 4: ", badges_collected["end4"], "\nEnding 5: ", badges_collected["end5"], "\nEnding 6: ", badges_collected["end6"], "\nEnding 7: ", badges_collected["end7"])
+    input("Press Enter to return to the main menu")
+    main_menu()
 
 def creds():
     print("===========================")
@@ -664,7 +677,7 @@ def main():
     time.sleep(1)
     username = input("What shall we call you? ")
     if username == "Kaye" or username == "kaye":
-        print("Welcome to ")
+        print("Welcome to "They love me, they love me not," our beloved teacher!")
     charname = input("What shall 'their' name be? ")
     if charname == "Zeryl" or charname == "zeryl":
         print("Unless ur a certain camia, she wants nothing to do with u /lh")
